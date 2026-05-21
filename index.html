@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(255, 255, 249);
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: darkblue;
+            height: 80px;
+            color: white;
+            padding-left: 30px ;
+            padding-right:30px ;
+            align-items: center;
+        }
+
+        .header nav{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover{
+            color: rgb(31, 212, 167);
+        }
+
+        .header button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: aquamarine;
+            font-size: 18px;
+        }
+
+
+        .header button:hover{
+            background-color: rgb(31, 212, 167);
+            color: white;
+            cursor: pointer;
+        }
+
+
+        /* hero section */
+        .hero{
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            margin-left: 60px;
+        }
+
+        .left h1{
+            font-size: 50px;
+            padding-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .left h1 span{
+            color: rgb(31, 212, 167);
+        }
+
+        .right img{
+            width: 600px;
+            height: 400px;
+            margin-left: 100px;
+            border-radius: 30px;
+
+        }
+
+
+        /* projects ranking  */
+
+        .projects{
+            display: flex;
+            background-color: darkblue;
+            width: 100%;
+            height: 130px;
+            margin-top: 80px ;
+            color: white;
+            font-size: 20px;
+            gap: 50px;
+        }
+
+        .projects h1{
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        .projects p{
+            padding-left: 100px;
+        
+
+        }
+
+
+        /* meet our team */
+        .t1{
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+        .team{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .team p{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .team p span a{
+            color:rgb(31, 212, 167);
+            margin-right: 20px;
+            text-decoration: none;
+            
+        }
+        
+        .teamimg{
+            display: flex;
+            gap: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+
+        }
+        .teamimg img{
+            width: 300px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .teamimg p span{
+            color: rgb(31, 212, 167);
+        }
+
+
+        /* footer */
+
+        .footer{
+            display: flex;
+            background-color: darkblue;
+            width: 100%;
+            height: 400px;
+            margin-top: 80px;
+            color: white;
+        }
+
+        .foo1 {
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+
+        .foo1 p{
+            padding-top: 20px;
+        }
+
+        .copyright{
+            margin: 150px 0 0 0;
+        }
+
+        .company{
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+
+        .company ul li{
+            margin-top: 10px;
+        }
+
+        .company ul{
+            list-style: none;
+            padding-left: 0;
+        }
+
+
+
+        .company a{
+            color: white;
+            text-decoration: none;
+            gap: 10px;
+        }
+
+        .company a:hover{
+            color: rgb(31, 212, 167);
+        }
+
+        .service{
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+        .service ul li{
+            margin-top: 10px;
+            margin-top: 8px;
+            list-style: none;
+        }
+
+        .service a{
+            color: white;
+            text-decoration: none;
+            gap: 10px;
+        }
+
+        .service a:hover{
+            color: rgb(31, 212, 167);
+        }
+
+
+        .newslatter{
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+        .newslatter p{
+            margin-top: 8px;
+        }
+
+        .newslatter input{
+            margin-top: 20px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            border: 1px solid rgb(31, 212, 167);
+        }
+
+         .newslatter input:focus{
+            outline: none;
+            border: 2px solid rgb(31, 212, 167);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Innovexa</h1>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><span><a href="">About</a></span></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </nav>
+        <button>Get a Quote</button>
+    </header>
+
+    <div class="hero">
+        <div class="left">
+
+            <h1>Empowering <br>
+                Business <br>
+                Throught <span> Innovation</span></h1>
+                <p>
+                Our company delivers innovative digital solutions <br>
+                that help businesses grow and succeed.
+                We focus  <br> on creativity, quality service, and modern technology <br>
+                to provide the best experience for our clients worldwide.
+                </p>
+        </div>
+
+        <div class="right">
+            <img src="https://i.pinimg.com/736x/4a/70/13/4a70136f7162163b5849874a0b535aab.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- project rank -->
+
+    <div class="projects">
+        <div>
+            <h1>500+</h1>
+            <p>Projects Completed</p>
+        </div>
+
+        <div>
+            <h1>300+</h1>
+            <p>Happy Clients</p>
+        </div>
+
+        <div>
+            <h1>400+</h1>
+            <p>Expert Advisors</p>
+        </div>
+
+
+        <div>
+            <h1>200+</h1>
+            <p>Team Members</p>
+        </div>
+    </div>
+
+
+    <!-- meet our team -->
+     <div class="t1">
+        <h2>Meet Our Team</h2>
+
+     </div>
+
+     <div class="team">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quasi <br> consequuntur ad adipisci placeat repellendus illum in deserunt odio nesciunt?</p>
+        <p> <span><a href="">Meet our team</a></span> </p>
+    </div>
+    <div  class="teamimg">
+        <div>
+            <img src="https://i.pinimg.com/736x/0a/de/79/0ade7978a78e1880decc809bdd382f60.jpg" alt="">
+            <p><b>Layla Revers</b><br><span>Chief Executive Officer</span></p>
+        </div>
+
+        <div>
+            <img src="https://i.pinimg.com/736x/fc/86/7d/fc867df822d70b9d78171c7e790f99c7.jpg" alt="">
+            <p><b>John Doe</b><br><span>Senior Developer</span></p>
+        </div>
+
+         <div >
+            <img src="https://i.pinimg.com/736x/31/01/1d/31011dca9aa0e94886bae8e53778c233.jpg" alt="">
+            <p><b>Jane Smith</b><br><span>Marketing Manager</span></p>
+        </div>
+
+        <div>
+            <img src="https://i.pinimg.com/1200x/ce/bb/0a/cebb0ace4532e076ce996d1200cc5f10.jpg" alt="">
+            <p><b>Mike Johnson</b><br><span>Sales Director</span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foo1">
+            <h1>Innovexa</h1>
+            <p>Innovating Software and Infrastructure <br> Solutions for the modern enterprise. <br> bridging the digital divide. since 2014</p>
+            <p class="copyright">Copyright © 2024 Elivate ICT. All rights reserved.</p>
+        </div>
+        <div class="company">
+            <h2>Company</h2>
+            <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Press Kit</a></li>
+            <li><a href="">Legal</a></li>
+            </ul>
+        </div>
+        <div class="service">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="">Software Development</a></li>
+                <li><a href="">Cloud Solutions</a></li>
+                <li><a href="">IT Consulting</a></li>
+                <li><a href="">Cybersecurity</a></li>
+            </ul>
+        </div>
+
+        <div class="newslatter">
+            <h2>Newsletter</h2>
+            <p>Stay updated with Our Latest News and insights.</p>
+            <input type="email" placeholder="Enter your email address">
+
+        </div>
+    </div>
+     
+</body>
+</html>
